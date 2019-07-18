@@ -1,0 +1,89 @@
+<?php   include("login.php");   echo "Welcome '$myusername'";   <html>
+
+<head>
+    <title>
+        DBMS Project Home Page
+    </title>
+    <style>
+        .box{
+
+        border-radius: 25px;
+        background-color: white;
+        width:1300px solid green;
+        border: 25px;
+        padding:25px;
+        margin:25px;
+        }
+        body {
+            background-color: black;
+        }
+        
+        div {
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 0px;
+            background-size: cover;
+            height: 255px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: indigo;
+            text-shadow: 3px 2px blue;
+        }
+        
+        .image {
+            position: relative;
+            height: 50px;
+            /* for IE 6 */
+        }
+        
+        h2 {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 100%;
+        }
+        
+        .left1 {
+            position: relative;
+            left: 240px;
+            float: left;
+            background-color: black;
+        }
+        
+        .right1 {
+            float: right;
+            position: relative;
+            right: 240px;
+            background-color: black;
+        }
+        .left2{
+            float: left;
+            position: relative;
+            left: 240px;
+             background-color: black
+        
+        }		 .right2 {            float: right;            position: relative;            right: 240px;            background-color: black;        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+    <div id="back">
+        <h1 id="1">DBMS Project</h1>
+        <h1 id="2">Club management system</h1>
+        <div class="left1">
+            <form method="POST" action="entry.html">
+                <button class="w3-button w3-white w3-border w3-border-red w3-round-large" type="submit"  style="height:255px;width: 255px" ><h2>PORTAL FOR DATA ENTRY</h2></button>
+            </form>
+        </div>		
+        <div class="right1">
+            <form method="POST" action="retrieval.html">
+                <button class="w3-button w3-white w3-border w3-border-red w3-round-large" type="submit"   style="height:255px;width:255px"><h2>PORTAL FOR DATA RETRIEVAL</h2></button>
+            </form>
+        </div>
+        <br>	 <div class="left2">            <form method="POST" action="update.html">                <button class="w3-button w3-white w3-border w3-border-red w3-round-large" type="submit" style=" float: left;height:255px;width:255px"><p style="color: black;text-align: center;font-size: 150%;">PORTAL FOR UPDATING THE DETAILS</p></button>            </form>        </div>		<br>
+</body>
+
+</html>
